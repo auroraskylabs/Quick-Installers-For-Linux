@@ -1,0 +1,2 @@
+# Quick-Installers-For-Linux
+ 
