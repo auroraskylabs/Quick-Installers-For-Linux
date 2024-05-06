@@ -72,5 +72,8 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plug
 
 # Run Honeygain container if agreed to Terms of Service
 if [[ $agreement == [Yy] ]]; then
-    docker run honeygain/honeygain -tou-accept -email $email -pass $password -device $devicename
+    docker run -d --restart always honeygain/honeygain -tou-accept -email $email -pass $password -device $devicename
 fi
+
+
+
